@@ -1,0 +1,89 @@
+{
+  "provenance": "observed_test",
+  "available_metrics": [
+    "registration_rate"
+  ],
+  "input_sha256": "60fc151a889ff93750dd304d7042a390da8f04ede7ae2e53dd30984ba8754e1c",
+  "metrics": [
+    {
+      "period": "observed-test",
+      "campaign": "all",
+      "market": "AE",
+      "delivered": null,
+      "clicked": null,
+      "sessions": 2,
+      "engaged": null,
+      "registrations": 1,
+      "registrants": null,
+      "attendees": null,
+      "unmatched_attendees": null,
+      "email_click_rate": null,
+      "engagement_rate": null,
+      "registration_rate": 0.5,
+      "attendance_rate": null
+    },
+    {
+      "period": "observed-test",
+      "campaign": "all",
+      "market": "all",
+      "delivered": null,
+      "clicked": null,
+      "sessions": 2,
+      "engaged": null,
+      "registrations": 1,
+      "registrants": null,
+      "attendees": null,
+      "unmatched_attendees": null,
+      "email_click_rate": null,
+      "engagement_rate": null,
+      "registration_rate": 0.5,
+      "attendance_rate": null
+    },
+    {
+      "period": "observed-test",
+      "campaign": "hepatitis",
+      "market": "AE",
+      "delivered": null,
+      "clicked": null,
+      "sessions": 2,
+      "engaged": null,
+      "registrations": 1,
+      "registrants": null,
+      "attendees": null,
+      "unmatched_attendees": null,
+      "email_click_rate": null,
+      "engagement_rate": null,
+      "registration_rate": 0.5,
+      "attendance_rate": null
+    },
+    {
+      "period": "observed-test",
+      "campaign": "hepatitis",
+      "market": "all",
+      "delivered": null,
+      "clicked": null,
+      "sessions": 2,
+      "engaged": null,
+      "registrations": 1,
+      "registrants": null,
+      "attendees": null,
+      "unmatched_attendees": null,
+      "email_click_rate": null,
+      "engagement_rate": null,
+      "registration_rate": 0.5,
+      "attendance_rate": null
+    }
+  ],
+  "rejected": [],
+  "audit": {
+    "imports": [
+      {
+        "file": "events-v1.csv",
+        "sha256": "aa8f76829430812bb46e1c3acfc490be2809fc5a6af7f056f4895d0a01e6a171",
+        "duplicate": false
+      }
+    ],
+    "duplicate_events": 0,
+    "orphan_registrations": 0
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "run_id": "1e77ad00-bcdd-4dba-87fc-882a3070d64e",
+  "created_at": "2026-10-18T12:29:48.802724+00:00",
+  "status": "validated",
+  "provider": "Google Gemini",
+  "provider_status": 200,
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "brief-v1",
+  "prompt_sha256": "fa642fd85247acd5c172c60a850aa45a14539719cbe9edb5e0471ea7a69e5b95",
+  "facts_sha256": "58f638e9fbe3ff993d2a080ce7e9f75e4ffe4d9e2ba84eee595a8de5e337c631",
+  "data_hash": "0d83e36b1715d7f5b36b6113efa2656afb09d5fda6b2210d64d75fb2c5d37899",
+  "scope": {
+    "campaign": "hepatitis",
+    "market": "all",
+    "period": "all"
+  },
+  "draft": {
+    "headline": "Synthetic hepatitis campaign portfolio operational review and data quality limitations summary",
+    "observations": [
+      {
+        "metric_id": "email_click_rate",
+        "interpretation": "Observed email click rate captures delivered messages with qualifying human clicks relative to delivered messages for synthetic data analysis."
+      },
+      {
+        "metric_id": "engagement_rate",
+        "interpretation": "Engagement rate measures eligible landing sessions meeting duration or interaction thresholds under synthetic conditions."
+      },
+      {
+        "metric_id": "registration_rate",
+        "interpretation": "Registration rate tracks eligible landing sessions resulting in a registration, noting identified tracking and mobile layout gaps."
+      },
+      {
+        "metric_id": "attendance_rate",
+        "interpretation": "Attendance rate reflects distinct registered webinar or person pairs with positive attendee time, accounting for duplicate file imports."
+      }
+    ],
+    "actions": [
+      "Review and add the explicit mapping for campaign tags split across the hepatitis journey, then rebuild while preserving the original raw tag.",
+      "Skip the identical exported webinar file and count webinar or person pairs rather than raw attendance rows.",
+      "Edit asset metadata for the hepatitis registration link in WordPress, publish changes, and execute a fresh mobile test journey."
+    ]
+  },
+  "provider_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"headline\": \"Synthetic hepatitis campaign portfolio operational review and data quality limitations summary\",\n  \"observations\": [\n    {\n      \"metric_id\": \"email_click_rate\",\n      \"interpretation\": \"Observed email click rate captures delivered messages with qualifying human clicks relative to delivered messages for synthetic data analysis.\"\n    },\n    {\n      \"metric_id\": \"engagement_rate\",\n      \"interpretation\": \"Engagement rate measures eligible landing sessions meeting duration or interaction thresholds under synthetic conditions.\"\n    },\n    {\n      \"metric_id\": \"registration_rate\",\n      \"interpretation\": \"Registration rate tracks eligible landing sessions resulting in a registration, noting identified tracking and mobile layout gaps.\"\n    },\n    {\n      \"metric_id\": \"attendance_rate\",\n      \"interpretation\": \"Attendance rate reflects distinct registered webinar or person pairs with positive attendee time, accounting for duplicate file imports.\"\n    }\n  ],\n  \"actions\": [\n    \"Review and add the explicit mapping for campaign tags split across the hepatitis journey, then rebuild while preserving the original raw tag.\",\n    \"Skip the identical exported webinar file and count webinar or person pairs rather than raw attendance rows.\",\n    \"Edit asset metadata for the hepatitis registration link in WordPress, publish changes, and execute a fresh mobile test journey.\"\n  ]\n}",
+              "thoughtSignature": "EmAKXgFpFH0TX9lm0ymuU4r9AspVKhhvNqF1Ds+Gc9DFwc36HbJskGolFKG3xLlXz0Fonl7kul7W+Un9LJa8pRHMN9Jabow7e4GInmvdU01mBZ0sE+RZK8OhyrO1OYMkuJ8="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 713,
+      "candidatesTokenCount": 285,
+      "totalTokenCount": 998,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 713
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash-lite",
+    "responseId": "u7vUaqzGKvuD1sgP4KXV8AM"
+  }
+}

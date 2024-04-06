@@ -1,0 +1,36 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "CampaignOps operations sandbox",
+    "author": "Uzair",
+    "description": "Independent demo: 12 original assets, real WordPress editing and isolated test journeys."
+  },
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "7.0"
+  },
+  "features": {
+    "networking": true
+  },
+  "login": true,
+  "landingPage": "/wp-admin/edit.php?post_type=campaign_asset",
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "bundled",
+        "path": "campaignops-plugin.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "CampaignOps test workspace",
+        "blogdescription": "Isolated portfolio demonstration"
+      }
+    }
+  ]
+}
