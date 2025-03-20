@@ -1,0 +1,1291 @@
+{
+  "manifest": {
+    "version": "1.0.0",
+    "contract_version": "events-v1",
+    "data_hash": "3d6d40694080f87da51d481513739b9b00d0d5d79b2ca68f84e0eeb8a9fd468e",
+    "calculation_sha256": "5fdb3e466b5f11043e1df1d830ea5b3e15e6ba168e3904ceb673c0f3be51ef48",
+    "cutoff": "2026-10-01T00:00:00+00:00",
+    "report_timezone": "Asia/Dubai",
+    "provenance": "synthetic",
+    "accepted": 8861,
+    "rejected": 73,
+    "quality": {
+      "unmapped_campaign": 69,
+      "invalid_timestamp": 1,
+      "after_cutoff": 1,
+      "conflicting_event_id": 2
+    },
+    "imports": [
+      {
+        "file": "defects.csv",
+        "sha256": "06ed2c53497eb3c0c36c1c4dea937c17883e8f29a4fae9fd4c9e87d6be07ce71",
+        "duplicate": false
+      },
+      {
+        "file": "email.csv",
+        "sha256": "8e2144d7d88296c143486839ed9c4ce0f4fba1baf43806306184ea71c92a6620",
+        "duplicate": false
+      },
+      {
+        "file": "web.csv",
+        "sha256": "cdf35816736efbabed624479a627833965ff2cd81e8c32d0c46224cd3042d9a7",
+        "duplicate": false
+      },
+      {
+        "file": "webinar-reexport.csv",
+        "sha256": "44ddc1d668ec55b026cce7a8daeb8eb4dc272d7428f302926be614957f696143",
+        "duplicate": false
+      },
+      {
+        "file": "webinar.csv",
+        "sha256": "44ddc1d668ec55b026cce7a8daeb8eb4dc272d7428f302926be614957f696143",
+        "duplicate": true
+      }
+    ],
+    "duplicate_events": 0,
+    "orphan_registrations": 0
+  },
+  "rejects": [
+    {
+      "source_file": "defects.csv",
+      "line": 3,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "unmapped-1",
+        "kind": "session",
+        "campaign_raw": "unmapped_campaign",
+        "market": "AE",
+        "timestamp": "2026-04-03T00:01:00+00:00",
+        "entity_id": "health-AE-session-1",
+        "parent_id": "",
+        "value": "69",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "defects.csv",
+      "line": 4,
+      "reason": "invalid_timestamp",
+      "raw": {
+        "event_id": "invalid-time",
+        "kind": "registration",
+        "campaign_raw": "health",
+        "market": "AE",
+        "timestamp": "yesterday",
+        "entity_id": "health-AE-session-1",
+        "parent_id": "",
+        "value": "",
+        "flag": "",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "defects.csv",
+      "line": 5,
+      "reason": "after_cutoff",
+      "raw": {
+        "event_id": "late-feed",
+        "kind": "session",
+        "campaign_raw": "health",
+        "market": "AE",
+        "timestamp": "2026-10-05T12:00:00+00:00",
+        "entity_id": "health-AE-session-2",
+        "parent_id": "",
+        "value": "147",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1771,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-0",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-25T00:00:00+00:00",
+        "entity_id": "hepatitis-AE-session-0",
+        "parent_id": "",
+        "value": "105",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1772,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-1",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-21T00:01:00+00:00",
+        "entity_id": "hepatitis-AE-session-1",
+        "parent_id": "",
+        "value": "142",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1773,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-2",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-29T00:02:00+00:00",
+        "entity_id": "hepatitis-AE-session-2",
+        "parent_id": "",
+        "value": "89",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1774,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-3",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-29T00:03:00+00:00",
+        "entity_id": "hepatitis-AE-session-3",
+        "parent_id": "",
+        "value": "147",
+        "flag": "2|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1775,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-4",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-08-03T00:04:00+00:00",
+        "entity_id": "hepatitis-AE-session-4",
+        "parent_id": "",
+        "value": "146",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1776,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-5",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-30T00:05:00+00:00",
+        "entity_id": "hepatitis-AE-session-5",
+        "parent_id": "",
+        "value": "156",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1777,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-registration-5",
+        "kind": "registration",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-30T00:05:00+00:00",
+        "entity_id": "hepatitis-AE-session-5",
+        "parent_id": "",
+        "value": "",
+        "flag": "",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1778,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-6",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-08-02T00:06:00+00:00",
+        "entity_id": "hepatitis-AE-session-6",
+        "parent_id": "",
+        "value": "159",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1779,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-7",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-29T00:07:00+00:00",
+        "entity_id": "hepatitis-AE-session-7",
+        "parent_id": "",
+        "value": "68",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1780,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-8",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-22T00:08:00+00:00",
+        "entity_id": "hepatitis-AE-session-8",
+        "parent_id": "",
+        "value": "59",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1781,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-9",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-29T00:09:00+00:00",
+        "entity_id": "hepatitis-AE-session-9",
+        "parent_id": "",
+        "value": "24",
+        "flag": "2|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1782,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-registration-9",
+        "kind": "registration",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-29T00:09:00+00:00",
+        "entity_id": "hepatitis-AE-session-9",
+        "parent_id": "",
+        "value": "",
+        "flag": "",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1783,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-10",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-18T00:10:00+00:00",
+        "entity_id": "hepatitis-AE-session-10",
+        "parent_id": "",
+        "value": "89",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1784,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-11",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-08-03T00:11:00+00:00",
+        "entity_id": "hepatitis-AE-session-11",
+        "parent_id": "",
+        "value": "102",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1785,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-12",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-31T00:12:00+00:00",
+        "entity_id": "hepatitis-AE-session-12",
+        "parent_id": "",
+        "value": "94",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1786,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-13",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-08-03T00:13:00+00:00",
+        "entity_id": "hepatitis-AE-session-13",
+        "parent_id": "",
+        "value": "5",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1787,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-registration-13",
+        "kind": "registration",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-08-03T00:13:00+00:00",
+        "entity_id": "hepatitis-AE-session-13",
+        "parent_id": "",
+        "value": "",
+        "flag": "",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1788,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-14",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-08-03T00:14:00+00:00",
+        "entity_id": "hepatitis-AE-session-14",
+        "parent_id": "",
+        "value": "131",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1789,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-15",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-20T00:15:00+00:00",
+        "entity_id": "hepatitis-AE-session-15",
+        "parent_id": "",
+        "value": "90",
+        "flag": "2|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1790,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-registration-15",
+        "kind": "registration",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-20T00:15:00+00:00",
+        "entity_id": "hepatitis-AE-session-15",
+        "parent_id": "",
+        "value": "",
+        "flag": "",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1791,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-16",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-20T00:16:00+00:00",
+        "entity_id": "hepatitis-AE-session-16",
+        "parent_id": "",
+        "value": "59",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1792,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-17",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-30T00:17:00+00:00",
+        "entity_id": "hepatitis-AE-session-17",
+        "parent_id": "",
+        "value": "73",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1793,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-registration-17",
+        "kind": "registration",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-30T00:17:00+00:00",
+        "entity_id": "hepatitis-AE-session-17",
+        "parent_id": "",
+        "value": "",
+        "flag": "",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1794,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-18",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-19T00:18:00+00:00",
+        "entity_id": "hepatitis-AE-session-18",
+        "parent_id": "",
+        "value": "128",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1795,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-AE-session-19",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "AE",
+        "timestamp": "2026-07-31T00:19:00+00:00",
+        "entity_id": "hepatitis-AE-session-19",
+        "parent_id": "",
+        "value": "110",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1909,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-0",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-22T00:00:00+00:00",
+        "entity_id": "hepatitis-SA-session-0",
+        "parent_id": "",
+        "value": "131",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1910,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-1",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-24T00:01:00+00:00",
+        "entity_id": "hepatitis-SA-session-1",
+        "parent_id": "",
+        "value": "132",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1911,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-2",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-31T00:02:00+00:00",
+        "entity_id": "hepatitis-SA-session-2",
+        "parent_id": "",
+        "value": "1",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1912,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-3",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-22T00:03:00+00:00",
+        "entity_id": "hepatitis-SA-session-3",
+        "parent_id": "",
+        "value": "8",
+        "flag": "2|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1913,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-4",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-08-01T00:04:00+00:00",
+        "entity_id": "hepatitis-SA-session-4",
+        "parent_id": "",
+        "value": "101",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1914,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-5",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-22T00:05:00+00:00",
+        "entity_id": "hepatitis-SA-session-5",
+        "parent_id": "",
+        "value": "149",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1915,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-6",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-08-01T00:06:00+00:00",
+        "entity_id": "hepatitis-SA-session-6",
+        "parent_id": "",
+        "value": "86",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1916,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-7",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-25T00:07:00+00:00",
+        "entity_id": "hepatitis-SA-session-7",
+        "parent_id": "",
+        "value": "51",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1917,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-registration-7",
+        "kind": "registration",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-25T00:07:00+00:00",
+        "entity_id": "hepatitis-SA-session-7",
+        "parent_id": "",
+        "value": "",
+        "flag": "",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1918,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-8",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-19T00:08:00+00:00",
+        "entity_id": "hepatitis-SA-session-8",
+        "parent_id": "",
+        "value": "118",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1919,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-9",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-21T00:09:00+00:00",
+        "entity_id": "hepatitis-SA-session-9",
+        "parent_id": "",
+        "value": "9",
+        "flag": "2|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1920,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-10",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-26T00:10:00+00:00",
+        "entity_id": "hepatitis-SA-session-10",
+        "parent_id": "",
+        "value": "126",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1921,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-11",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-30T00:11:00+00:00",
+        "entity_id": "hepatitis-SA-session-11",
+        "parent_id": "",
+        "value": "56",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1922,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-12",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-29T00:12:00+00:00",
+        "entity_id": "hepatitis-SA-session-12",
+        "parent_id": "",
+        "value": "52",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1923,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-13",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-08-03T00:13:00+00:00",
+        "entity_id": "hepatitis-SA-session-13",
+        "parent_id": "",
+        "value": "128",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1924,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-registration-13",
+        "kind": "registration",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-08-03T00:13:00+00:00",
+        "entity_id": "hepatitis-SA-session-13",
+        "parent_id": "",
+        "value": "",
+        "flag": "",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1925,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-14",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-23T00:14:00+00:00",
+        "entity_id": "hepatitis-SA-session-14",
+        "parent_id": "",
+        "value": "140",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1926,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-15",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-19T00:15:00+00:00",
+        "entity_id": "hepatitis-SA-session-15",
+        "parent_id": "",
+        "value": "71",
+        "flag": "2|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1927,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-16",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-08-01T00:16:00+00:00",
+        "entity_id": "hepatitis-SA-session-16",
+        "parent_id": "",
+        "value": "5",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1928,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-17",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-30T00:17:00+00:00",
+        "entity_id": "hepatitis-SA-session-17",
+        "parent_id": "",
+        "value": "56",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1929,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-18",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-19T00:18:00+00:00",
+        "entity_id": "hepatitis-SA-session-18",
+        "parent_id": "",
+        "value": "154",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 1930,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-SA-session-19",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "SA",
+        "timestamp": "2026-07-29T00:19:00+00:00",
+        "entity_id": "hepatitis-SA-session-19",
+        "parent_id": "",
+        "value": "27",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2038,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-0",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-24T00:00:00+00:00",
+        "entity_id": "hepatitis-QA-session-0",
+        "parent_id": "",
+        "value": "143",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2039,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-1",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-20T00:01:00+00:00",
+        "entity_id": "hepatitis-QA-session-1",
+        "parent_id": "",
+        "value": "15",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2040,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-2",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-22T00:02:00+00:00",
+        "entity_id": "hepatitis-QA-session-2",
+        "parent_id": "",
+        "value": "102",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2041,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-3",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-22T00:03:00+00:00",
+        "entity_id": "hepatitis-QA-session-3",
+        "parent_id": "",
+        "value": "136",
+        "flag": "2|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2042,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-4",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-19T00:04:00+00:00",
+        "entity_id": "hepatitis-QA-session-4",
+        "parent_id": "",
+        "value": "132",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2043,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-5",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-31T00:05:00+00:00",
+        "entity_id": "hepatitis-QA-session-5",
+        "parent_id": "",
+        "value": "41",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2044,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-6",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-20T00:06:00+00:00",
+        "entity_id": "hepatitis-QA-session-6",
+        "parent_id": "",
+        "value": "109",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2045,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-7",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-28T00:07:00+00:00",
+        "entity_id": "hepatitis-QA-session-7",
+        "parent_id": "",
+        "value": "64",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2046,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-8",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-08-02T00:08:00+00:00",
+        "entity_id": "hepatitis-QA-session-8",
+        "parent_id": "",
+        "value": "104",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2047,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-9",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-19T00:09:00+00:00",
+        "entity_id": "hepatitis-QA-session-9",
+        "parent_id": "",
+        "value": "83",
+        "flag": "2|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2048,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-10",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-26T00:10:00+00:00",
+        "entity_id": "hepatitis-QA-session-10",
+        "parent_id": "",
+        "value": "11",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2049,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-11",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-21T00:11:00+00:00",
+        "entity_id": "hepatitis-QA-session-11",
+        "parent_id": "",
+        "value": "129",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2050,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-12",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-23T00:12:00+00:00",
+        "entity_id": "hepatitis-QA-session-12",
+        "parent_id": "",
+        "value": "10",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2051,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-13",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-30T00:13:00+00:00",
+        "entity_id": "hepatitis-QA-session-13",
+        "parent_id": "",
+        "value": "18",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2052,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-14",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-26T00:14:00+00:00",
+        "entity_id": "hepatitis-QA-session-14",
+        "parent_id": "",
+        "value": "108",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2053,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-15",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-22T00:15:00+00:00",
+        "entity_id": "hepatitis-QA-session-15",
+        "parent_id": "",
+        "value": "62",
+        "flag": "2|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2054,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-16",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-08-01T00:16:00+00:00",
+        "entity_id": "hepatitis-QA-session-16",
+        "parent_id": "",
+        "value": "21",
+        "flag": "1|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2055,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-17",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-28T00:17:00+00:00",
+        "entity_id": "hepatitis-QA-session-17",
+        "parent_id": "",
+        "value": "100",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2056,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-18",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-25T00:18:00+00:00",
+        "entity_id": "hepatitis-QA-session-18",
+        "parent_id": "",
+        "value": "66",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2057,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-session-19",
+        "kind": "session",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-23T00:19:00+00:00",
+        "entity_id": "hepatitis-QA-session-19",
+        "parent_id": "",
+        "value": "95",
+        "flag": "1|landing|desktop",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2058,
+      "reason": "unmapped_campaign",
+      "raw": {
+        "event_id": "hepatitis-QA-registration-19",
+        "kind": "registration",
+        "campaign_raw": "Hepatitis_2026",
+        "market": "QA",
+        "timestamp": "2026-07-23T00:19:00+00:00",
+        "entity_id": "hepatitis-QA-session-19",
+        "parent_id": "",
+        "value": "",
+        "flag": "",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "defects.csv",
+      "line": 2,
+      "reason": "conflicting_event_id",
+      "raw": {
+        "event_id": "health-AE-session-0",
+        "kind": "session",
+        "campaign_raw": "health",
+        "market": "AE",
+        "timestamp": "2026-04-10T00:00:00+00:00",
+        "entity_id": "health-AE-session-0",
+        "parent_id": "",
+        "value": "999",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    },
+    {
+      "source_file": "web.csv",
+      "line": 2,
+      "reason": "conflicting_event_id",
+      "raw": {
+        "event_id": "health-AE-session-0",
+        "kind": "session",
+        "campaign_raw": "health",
+        "market": "AE",
+        "timestamp": "2026-04-10T00:00:00+00:00",
+        "entity_id": "health-AE-session-0",
+        "parent_id": "",
+        "value": "84",
+        "flag": "2|landing|mobile",
+        "provenance": "synthetic"
+      }
+    }
+  ]
+}
