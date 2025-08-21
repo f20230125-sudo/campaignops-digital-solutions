@@ -5,12 +5,12 @@ from .build import ROOT, REGISTRY, digest, write_json
 
 PROMPT_VERSION='brief-v1'
 def validate(draft):
-    if set(draft)!={'headline','observations','actions'}: raise ValueError('Unexpected brief fields')
-    if not isinstance(draft['headline'],str) or not 1<=len(draft['headline'])<=180:raise ValueError('Invalid headline')
+    if not isinstance(draft,dict) or set(draft)!={'headline','observations','actions'}: raise ValueError('Unexpected brief fields')
+    if not isinstance(draft['headline'],str) or not draft['headline'].strip() or not 1<=len(draft['headline'])<=180:raise ValueError('Invalid headline')
     if not isinstance(draft['observations'],list) or not 1<=len(draft['observations'])<=4:raise ValueError('Invalid observations')
     for o in draft['observations']:
-        if set(o)!={'metric_id','interpretation'} or o['metric_id'] not in REGISTRY or not isinstance(o['interpretation'],str) or len(o['interpretation'])>600:raise ValueError('Unknown metric reference')
-    if not isinstance(draft['actions'],list) or not 1<=len(draft['actions'])<=4 or any(not isinstance(a,str) or not a or len(a)>500 for a in draft['actions']):raise ValueError('Invalid actions')
+        if not isinstance(o,dict) or set(o)!={'metric_id','interpretation'} or not isinstance(o['metric_id'],str) or o['metric_id'] not in REGISTRY or not isinstance(o['interpretation'],str) or not o['interpretation'].strip() or len(o['interpretation'])>600:raise ValueError('Unknown metric reference')
+    if not isinstance(draft['actions'],list) or not 1<=len(draft['actions'])<=4 or any(not isinstance(a,str) or not a.strip() or len(a)>500 for a in draft['actions']):raise ValueError('Invalid actions')
     # The application, rather than the model, renders numbers from verified facts.
     if re.search(r'\d|%',json.dumps(draft)):raise ValueError('Draft contains model-written numbers')
     return draft
