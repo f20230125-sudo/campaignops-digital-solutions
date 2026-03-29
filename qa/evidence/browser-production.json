@@ -1,0 +1,33 @@
+{
+  "base": "https://campaignops-digital-solutions.vercel.app",
+  "checks": [
+    "Dashboard matches SQL metric email_click_rate",
+    "Dashboard matches SQL metric engagement_rate",
+    "Dashboard matches SQL metric registration_rate",
+    "Dashboard matches SQL metric attendance_rate",
+    "URL preserves campaign and market",
+    "Scope recalculates denominator",
+    "Filters survive refresh",
+    "Source drilldown has file and line",
+    "Raw unmapped tag visible",
+    "Download campaign-report.pdf",
+    "Download campaign-metrics.xlsx",
+    "Download campaign-metrics.csv",
+    "Download report-manifest.json",
+    "Download campaignops-blueprint.zip",
+    "Unsupported AI scope shown honestly",
+    "Saved AI draft matches scope and data fingerprint",
+    "Desktop automated accessibility checks",
+    "No page horizontal overflow",
+    "Mobile automated accessibility checks",
+    "Real WordPress booted",
+    "Seeded mobile CTA defect reproduced",
+    "Actual mobile registration recorded",
+    "No application JavaScript errors"
+  ],
+  "errors": [],
+  "browserNotices": [
+    "Transition was aborted because of invalid state. ViewTransition opt-in disabled"
+  ],
+  "wordpress": true
+}

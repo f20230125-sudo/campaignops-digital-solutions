@@ -1,0 +1,74 @@
+{
+  "run_id": "074fcf07-8ecc-4bcd-9d37-1e7a2d7d35b8",
+  "created_at": "2026-10-18T12:38:16.290549+00:00",
+  "status": "validated",
+  "provider": "Google Gemini",
+  "provider_status": 200,
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "brief-v1",
+  "prompt_sha256": "fa642fd85247acd5c172c60a850aa45a14539719cbe9edb5e0471ea7a69e5b95",
+  "facts_sha256": "58f638e9fbe3ff993d2a080ce7e9f75e4ffe4d9e2ba84eee595a8de5e337c631",
+  "data_hash": "3d6d40694080f87da51d481513739b9b00d0d5d79b2ca68f84e0eeb8a9fd468e",
+  "scope": {
+    "campaign": "hepatitis",
+    "market": "all",
+    "period": "all"
+  },
+  "draft": {
+    "headline": "Synthetic hepatitis portfolio observations highlighting tracking, import, and layout limitations",
+    "observations": [
+      {
+        "metric_id": "email_click_rate",
+        "interpretation": "Observed email interactions reflect delivered messages with qualifying human clicks, excluding known bot activity and collapsing repeat clicks by message identifier."
+      },
+      {
+        "metric_id": "engagement_rate",
+        "interpretation": "Landing sessions capture eligible durations surpassing the threshold alongside multi-page views or registrations."
+      },
+      {
+        "metric_id": "registration_rate",
+        "interpretation": "Registration metrics measure eligible landing sessions resulting in a registration, subject to known visibility issues on mobile viewports."
+      },
+      {
+        "metric_id": "attendance_rate",
+        "interpretation": "Attendance tracking tallies distinct registered webinar and person pairs with positive attendee time, collapsing rejoins and excluding presenters."
+      }
+    ],
+    "actions": [
+      "Review and add explicit mapping for unmapped campaign tags in web exports, preserving original raw tags while noting reclassification recovers attributable records without creating new audience activity.",
+      "Skip identical file imports by checking hashes and count webinar and person pairs rather than raw attendance rows, allowing exact file deduplication while quarantining conflicting event IDs.",
+      "Edit WordPress landing page asset metadata to address hidden registration actions at narrow widths, publish changes, and run fresh mobile test journeys acknowledging historical conversion rates remain unchanged."
+    ]
+  },
+  "provider_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"headline\": \"Synthetic hepatitis portfolio observations highlighting tracking, import, and layout limitations\",\n  \"observations\": [\n    {\n      \"metric_id\": \"email_click_rate\",\n      \"interpretation\": \"Observed email interactions reflect delivered messages with qualifying human clicks, excluding known bot activity and collapsing repeat clicks by message identifier.\"\n    },\n    {\n      \"metric_id\": \"engagement_rate\",\n      \"interpretation\": \"Landing sessions capture eligible durations surpassing the threshold alongside multi-page views or registrations.\"\n    },\n    {\n      \"metric_id\": \"registration_rate\",\n      \"interpretation\": \"Registration metrics measure eligible landing sessions resulting in a registration, subject to known visibility issues on mobile viewports.\"\n    },\n    {\n      \"metric_id\": \"attendance_rate\",\n      \"interpretation\": \"Attendance tracking tallies distinct registered webinar and person pairs with positive attendee time, collapsing rejoins and excluding presenters.\"\n    }\n  ],\n  \"actions\": [\n    \"Review and add explicit mapping for unmapped campaign tags in web exports, preserving original raw tags while noting reclassification recovers attributable records without creating new audience activity.\",\n    \"Skip identical file imports by checking hashes and count webinar and person pairs rather than raw attendance rows, allowing exact file deduplication while quarantining conflicting event IDs.\",\n    \"Edit WordPress landing page asset metadata to address hidden registration actions at narrow widths, publish changes, and run fresh mobile test journeys acknowledging historical conversion rates remain unchanged.\"\n  ]\n}",
+              "thoughtSignature": "EmAKXgFpFH0Tjk/QdGDBTIdxEC4rGUzynP6lW1piH/NxP5RcRk1S9M3APQtFQuG5ZnFc70v/5Ua9P2tUWt+7/SRzHV2d8dh8xArN3AkI6LZQ465SnZ9Jtnxp/Ss0ZzGs5BU="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 713,
+      "candidatesTokenCount": 323,
+      "totalTokenCount": 1036,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 713
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash-lite",
+    "responseId": "tr3UapCaN6LgytMPsanSwA8"
+  }
+}
