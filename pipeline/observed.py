@@ -8,7 +8,12 @@ def ingest(path, destination):
     events=json.loads(Path(path).read_text(encoding='utf-8-sig'))
     if not isinstance(events,list): raise ValueError('Expected the WordPress event array')
     rows=[]
-    for e in events:
+    for index,e in enumerate(events,1):
+        required={'event_id','kind','campaign_id','market','timestamp','session_id','device','provenance'}
+        if not isinstance(e,dict) or any(not isinstance(e.get(k),str) or not e[k].strip() for k in required):
+            raise ValueError(f'Observed event {index}: required fields must be nonempty strings')
+        if e['device'] not in {'mobile','desktop'}:
+            raise ValueError(f'Observed event {index}: invalid device')
         if e.get('provenance')!='observed_test' or e.get('kind') not in {'page_view','cta_click','registration'}: raise ValueError('Invalid observed event')
         if e['kind']=='cta_click': continue
         kind='session' if e['kind']=='page_view' else 'registration'
