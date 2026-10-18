@@ -1,0 +1,46 @@
+[
+  {
+    "event_id": "a80a7d29-6bab-4df9-92d3-e153dcd6a8ec",
+    "kind": "page_view",
+    "session_id": "85b1a5a3-24a6-4c5a-9c07-79ea70770245",
+    "asset_id": "hepatitis-landing",
+    "campaign_id": "hepatitis",
+    "market": "AE",
+    "device": "mobile",
+    "timestamp": "2026-10-18T13:09:06+00:00",
+    "provenance": "observed_test"
+  },
+  {
+    "event_id": "1e30be33-c509-4610-84ab-fcc196e2eb48",
+    "kind": "page_view",
+    "session_id": "4a3999c6-de46-44f4-8e10-7a29c0a75ee1",
+    "asset_id": "hepatitis-landing",
+    "campaign_id": "hepatitis",
+    "market": "AE",
+    "device": "mobile",
+    "timestamp": "2026-10-18T13:10:11+00:00",
+    "provenance": "observed_test"
+  },
+  {
+    "event_id": "df018c18-379b-4d93-937a-8fa1163e6a58",
+    "kind": "cta_click",
+    "session_id": "4a3999c6-de46-44f4-8e10-7a29c0a75ee1",
+    "asset_id": "hepatitis-landing",
+    "campaign_id": "hepatitis",
+    "market": "AE",
+    "device": "mobile",
+    "timestamp": "2026-10-18T13:10:12+00:00",
+    "provenance": "observed_test"
+  },
+  {
+    "event_id": "60549977-e2fb-4ee1-be48-0f762b136b86",
+    "kind": "registration",
+    "session_id": "4a3999c6-de46-44f4-8e10-7a29c0a75ee1",
+    "asset_id": "hepatitis-landing",
+    "campaign_id": "hepatitis",
+    "market": "AE",
+    "device": "mobile",
+    "timestamp": "2026-10-18T13:10:12+00:00",
+    "provenance": "observed_test"
+  }
+]

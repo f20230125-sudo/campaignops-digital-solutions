@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "contract_version": "events-v1",
+  "data_hash": "3d6d40694080f87da51d481513739b9b00d0d5d79b2ca68f84e0eeb8a9fd468e",
+  "calculation_sha256": "5fdb3e466b5f11043e1df1d830ea5b3e15e6ba168e3904ceb673c0f3be51ef48",
+  "cutoff": "2026-10-01T00:00:00+00:00",
+  "report_timezone": "Asia/Dubai",
+  "provenance": "synthetic",
+  "accepted": 8861,
+  "rejected": 73,
+  "quality": {
+    "unmapped_campaign": 69,
+    "invalid_timestamp": 1,
+    "after_cutoff": 1,
+    "conflicting_event_id": 2
+  },
+  "imports": [
+    {
+      "file": "defects.csv",
+      "sha256": "06ed2c53497eb3c0c36c1c4dea937c17883e8f29a4fae9fd4c9e87d6be07ce71",
+      "duplicate": false
+    },
+    {
+      "file": "email.csv",
+      "sha256": "8e2144d7d88296c143486839ed9c4ce0f4fba1baf43806306184ea71c92a6620",
+      "duplicate": false
+    },
+    {
+      "file": "web.csv",
+      "sha256": "cdf35816736efbabed624479a627833965ff2cd81e8c32d0c46224cd3042d9a7",
+      "duplicate": false
+    },
+    {
+      "file": "webinar-reexport.csv",
+      "sha256": "44ddc1d668ec55b026cce7a8daeb8eb4dc272d7428f302926be614957f696143",
+      "duplicate": false
+    },
+    {
+      "file": "webinar.csv",
+      "sha256": "44ddc1d668ec55b026cce7a8daeb8eb4dc272d7428f302926be614957f696143",
+      "duplicate": true
+    }
+  ],
+  "duplicate_events": 0,
+  "orphan_registrations": 0
+}

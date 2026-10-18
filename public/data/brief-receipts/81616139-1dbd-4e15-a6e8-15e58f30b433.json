@@ -1,0 +1,74 @@
+{
+  "run_id": "81616139-1dbd-4e15-a6e8-15e58f30b433",
+  "created_at": "2026-10-18T12:38:14.509025+00:00",
+  "status": "validated",
+  "provider": "Google Gemini",
+  "provider_status": 200,
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "brief-v1",
+  "prompt_sha256": "8999fcbf8eebe81de8471894ab730c9e98971b1bdab5fac63df410e3f0eda807",
+  "facts_sha256": "c77bdf57dac2281036249b33ee91a0ab74d087449c8eef4338830fd59ce4e34d",
+  "data_hash": "3d6d40694080f87da51d481513739b9b00d0d5d79b2ca68f84e0eeb8a9fd468e",
+  "scope": {
+    "campaign": "all",
+    "market": "all",
+    "period": "all"
+  },
+  "draft": {
+    "headline": "Synthetic Portfolio Operational Review",
+    "observations": [
+      {
+        "metric_id": "email_click_rate",
+        "interpretation": "Observed email click performance reflects delivered messages with qualifying clicks relative to total delivered messages, noting that known bot clicks are excluded and repeat clicks collapse to message IDs."
+      },
+      {
+        "metric_id": "engagement_rate",
+        "interpretation": "Observed engagement rate captures eligible landing sessions meeting qualifying duration, pageview, or registration criteria relative to eligible landing sessions."
+      },
+      {
+        "metric_id": "registration_rate",
+        "interpretation": "Observed registration rate indicates eligible landing sessions resulting in a registration relative to total eligible landing sessions, noting that tracking limitations split the hepatitis journey."
+      },
+      {
+        "metric_id": "attendance_rate",
+        "interpretation": "Observed attendance rate measures distinct registered webinar or person pairs with positive attendee time relative to total distinct registrations, with rejoins collapsed and presenters excluded."
+      }
+    ],
+    "actions": [
+      "Review and add explicit mapping for unmapped hepatitis campaign tags in web exports, preserving original raw tags.",
+      "Skip identical webinar export files and count distinct webinar or person pairs rather than attendance rows.",
+      "Edit WordPress landing page asset metadata to unhide registration actions at narrow widths and run a fresh mobile test journey."
+    ]
+  },
+  "provider_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"headline\": \"Synthetic Portfolio Operational Review\",\n  \"observations\": [\n    {\n      \"metric_id\": \"email_click_rate\",\n      \"interpretation\": \"Observed email click performance reflects delivered messages with qualifying clicks relative to total delivered messages, noting that known bot clicks are excluded and repeat clicks collapse to message IDs.\"\n    },\n    {\n      \"metric_id\": \"engagement_rate\",\n      \"interpretation\": \"Observed engagement rate captures eligible landing sessions meeting qualifying duration, pageview, or registration criteria relative to eligible landing sessions.\"\n    },\n    {\n      \"metric_id\": \"registration_rate\",\n      \"interpretation\": \"Observed registration rate indicates eligible landing sessions resulting in a registration relative to total eligible landing sessions, noting that tracking limitations split the hepatitis journey.\"\n    },\n    {\n      \"metric_id\": \"attendance_rate\",\n      \"interpretation\": \"Observed attendance rate measures distinct registered webinar or person pairs with positive attendee time relative to total distinct registrations, with rejoins collapsed and presenters excluded.\"\n    }\n  ],\n  \"actions\": [\n    \"Review and add explicit mapping for unmapped hepatitis campaign tags in web exports, preserving original raw tags.\",\n    \"Skip identical webinar export files and count distinct webinar or person pairs rather than attendance rows.\",\n    \"Edit WordPress landing page asset metadata to unhide registration actions at narrow widths and run a fresh mobile test journey.\"\n  ]\n}",
+              "thoughtSignature": "EmAKXgFpFH0TZOcQFJJDtNbmIswebDyXmQO8iE0R8nUnLNweIkpgFmj6vMjfG0rM0+5RxTeXZ4IQl8JBXl3ay2kD++G1hFZ0znG1WnK8t72tHWDigMF0ikuv9uxvIzIElHQ="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 733,
+      "candidatesTokenCount": 311,
+      "totalTokenCount": 1044,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 733
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash-lite",
+    "responseId": "tb3UatOsEp6QytMP29WxyA8"
+  }
+}

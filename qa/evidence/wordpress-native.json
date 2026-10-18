@@ -1,0 +1,18 @@
+{
+    "passed": 13,
+    "checks": [
+        "Twelve seeded assets",
+        "Anonymous inventory denied",
+        "Draft created",
+        "Native pending review",
+        "Native publication",
+        "REST content and governance edit",
+        "Native content revision restored",
+        "Native metadata revision restored",
+        "Subscriber editing denied",
+        "Missing journey nonce denied",
+        "Valid journey captured",
+        "Identical journey ID is idempotent",
+        "Conflicting journey ID denied"
+    ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "health",
+    "title": "World Health Day",
+    "date": "2026-04-07",
+    "source": "https://www.who.int/campaigns/world-health-day/2026",
+    "summary": "Make reliable health information easier to find.",
+    "provenance": "public_reference"
+  },
+  {
+    "id": "immunization",
+    "title": "World Immunization Week",
+    "date": "2026-04-24",
+    "source": "https://www.who.int/campaigns/world-immunization-week/2026",
+    "summary": "Prepare clear questions for a conversation about immunization.",
+    "provenance": "public_reference"
+  },
+  {
+    "id": "tobacco",
+    "title": "World No Tobacco Day",
+    "date": "2026-05-31",
+    "source": "https://www.who.int/campaigns/world-no-tobacco-day/2026",
+    "summary": "Explore public information about tobacco prevention.",
+    "provenance": "public_reference"
+  },
+  {
+    "id": "blood",
+    "title": "World Blood Donor Day",
+    "date": "2026-06-14",
+    "source": "https://www.who.int/campaigns/world-blood-donor-day/2026",
+    "summary": "Find public resources about blood donation.",
+    "provenance": "public_reference"
+  },
+  {
+    "id": "hepatitis",
+    "title": "World Hepatitis Day",
+    "date": "2026-07-28",
+    "source": "https://www.who.int/campaigns/world-hepatitis-day/2026",
+    "summary": "Connect with public awareness and prevention resources.",
+    "provenance": "public_reference"
+  },
+  {
+    "id": "safety",
+    "title": "World Patient Safety Day",
+    "date": "2026-09-17",
+    "source": "https://www.who.int/campaigns/world-patient-safety-day/2026",
+    "summary": "Use clear questions and reliable information to support safer care.",
+    "provenance": "public_reference"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "run_id": "c7b3562b-629a-45ec-bef8-374d34d43c5b",
+  "created_at": "2026-10-18T11:54:54.338222+00:00",
+  "status": "validated",
+  "provider": "Google Gemini",
+  "provider_status": 200,
+  "model": "gemini-3.5-flash-lite",
+  "prompt_version": "brief-v1",
+  "prompt_sha256": "bac92a42e1c9e8722a3d8cb7f57289d9370049d4985fe592a490d742e0d47f94",
+  "facts_sha256": "8cc535160ae05718b562d5e1264f9761e9204c369b4fdf442e249aed8c5908a2",
+  "data_hash": "153d14253308eaec941f5cdcb628941b990f64687fa84778caafa9515006da98",
+  "scope": {
+    "campaign": "all",
+    "market": "all",
+    "period": "all"
+  },
+  "draft": {
+    "headline": "Synthetic Portfolio Operational Review Draft",
+    "observations": [
+      {
+        "metric_id": "email_click_rate",
+        "interpretation": "Observed email click activity reflecting delivered messages with qualifying human clicks under synthetic provenance limits."
+      },
+      {
+        "metric_id": "engagement_rate",
+        "interpretation": "Recorded engagement across eligible landing sessions meeting duration, pageview, or registration thresholds."
+      },
+      {
+        "metric_id": "registration_rate",
+        "interpretation": "Tracked registration proportions relative to eligible landing sessions, noting potential visibility limitations on specific device widths."
+      },
+      {
+        "metric_id": "attendance_rate",
+        "interpretation": "Evaluated distinct registered pairs with positive attendee time, using deduplicated event records."
+      }
+    ],
+    "actions": [
+      "Review and add the explicit mapping for campaign tags split across the hepatitis journey, then rebuild while preserving the original raw tag.",
+      "Skip identical webinar files and count distinct webinar and person pairs rather than raw attendance rows.",
+      "Edit asset metadata in WordPress for the hidden mobile registration action, publish updates, and run a fresh mobile test journey."
+    ]
+  },
+  "provider_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"headline\": \"Synthetic Portfolio Operational Review Draft\",\n  \"observations\": [\n    {\n      \"metric_id\": \"email_click_rate\",\n      \"interpretation\": \"Observed email click activity reflecting delivered messages with qualifying human clicks under synthetic provenance limits.\"\n    },\n    {\n      \"metric_id\": \"engagement_rate\",\n      \"interpretation\": \"Recorded engagement across eligible landing sessions meeting duration, pageview, or registration thresholds.\"\n    },\n    {\n      \"metric_id\": \"registration_rate\",\n      \"interpretation\": \"Tracked registration proportions relative to eligible landing sessions, noting potential visibility limitations on specific device widths.\"\n    },\n    {\n      \"metric_id\": \"attendance_rate\",\n      \"interpretation\": \"Evaluated distinct registered pairs with positive attendee time, using deduplicated event records.\"\n    }\n  ],\n  \"actions\": [\n    \"Review and add the explicit mapping for campaign tags split across the hepatitis journey, then rebuild while preserving the original raw tag.\",\n    \"Skip identical webinar files and count distinct webinar and person pairs rather than raw attendance rows.\",\n    \"Edit asset metadata in WordPress for the hidden mobile registration action, publish updates, and run a fresh mobile test journey.\"\n  ]\n}",
+              "thoughtSignature": "EmAKXgFpFH0TBHenSxdrlJsfV8IJrp7C/zUBnSLgodalbt0C9R7nheMDag4or988LeLTSntnjIXcaceMaA/1gz+slZVKpp+6Bz+gM4zO/rhL6+gwemHlF1mpGe4fpc2ed04="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 732,
+      "candidatesTokenCount": 272,
+      "totalTokenCount": 1004,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 732
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash-lite",
+    "responseId": "jbPUaqXfC6-H1sgP14eWkAk"
+  }
+}

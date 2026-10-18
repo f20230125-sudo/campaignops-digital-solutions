@@ -1,0 +1,5 @@
+event_id,kind,campaign_raw,market,timestamp,entity_id,parent_id,value,flag,provenance
+health-AE-session-0,session,health,AE,2026-04-10T00:00:00+00:00,health-AE-session-0,,999,2|landing|mobile,synthetic
+unmapped-1,session,unmapped_campaign,AE,2026-04-03T00:01:00+00:00,health-AE-session-1,,69,1|landing|desktop,synthetic
+invalid-time,registration,health,AE,yesterday,health-AE-session-1,,,,synthetic
+late-feed,session,health,AE,2026-10-05T12:00:00+00:00,health-AE-session-2,,147,1|landing|mobile,synthetic

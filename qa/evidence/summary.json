@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-18",
+  "public_url": "https://campaignops-digital-solutions.vercel.app",
+  "pipeline_tests": 10,
+  "native_wordpress_assertions": 13,
+  "browser_checks": 23,
+  "data_hash": "3d6d40694080f87da51d481513739b9b00d0d5d79b2ca68f84e0eeb8a9fd468e",
+  "wordpress_sdk": "3.1.58",
+  "wordpress": "7.0.7",
+  "php": "8.3",
+  "local_persistence": "11 published asset IDs unchanged after terminating and restarting the local server",
+  "build": "Vercel production READY; npm ci and Next production build",
+  "lint": "passed",
+  "typescript": "passed"
+}
